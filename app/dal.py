@@ -47,4 +47,8 @@ def get_employees_by_lastname_and_age():
     client.close()
     return employees
 
+def uplaod_file(file_data):
+    ins_result = collection.insert_many(file_data)
+    return {f"data insert to mongo, ObjectId:{ins_result.inserted_ids}"}
+
 
