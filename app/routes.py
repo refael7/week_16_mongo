@@ -27,10 +27,7 @@ def get_managers_excluding_departments():
 def get_employees_by_lastname_and_age():
     return get_employees_by_lastname_and_age()
 
-@router.post("/uploadfile")
-def upload_file():
-    pass
-
+ 
 
 
 
