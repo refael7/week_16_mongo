@@ -44,4 +44,4 @@ def get_connection():
     db = myclient["contacts_data"]
     Collection = db["employee_data_advanced"]
     return Collection
-collection = get_connection()
+ 
