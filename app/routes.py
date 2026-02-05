@@ -27,6 +27,12 @@ def get_managers_excluding_departments():
 def get_employees_by_lastname_and_age():
     return get_employees_by_lastname_and_age()
 
+
+@router.post("/uploadfile")
+def create_upload_file(file: UploadFile = File(...)):
+    json_data = jsonable_encoder(file)
+    return dal.uplaod_file(json_data)
+
  
 
 
